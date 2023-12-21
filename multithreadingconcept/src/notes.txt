@@ -24,6 +24,11 @@ ex--> MS Word that is printing and formatting text at the same time.
 
 ###threads
 --> A thread is an independent sequential path of execution within a program
+--> Many threads can run concurrently within a program
+--> At runtime, threads in a program exist in a common memory space and can, therefore share both data and code
+(i.e they are lightweight compared to processes)
+--> They also share the process running the program
+
 
 
 
