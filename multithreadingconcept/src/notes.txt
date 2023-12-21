@@ -1,0 +1,30 @@
+#####multitasking
+--> multitasking allows several activities to occur concurrently on the computer
+     i) process based multitasking
+     ii) thread based multitasking
+
+i) process based multitasking
+--> allows processes(i.e programs) to run concurrently on the computer
+ex--> running the MS Paint while also working with the word processor
+
+ii) Thread based multitasking
+--> allows parts of the same program to run concurrently on the computer.
+ex--> MS Word that is printing and formatting text at the same time.
+
+#### Thread vs process
+--> two threads share the same address space.
+--> context switching between threads is usually less expensive than between processes.
+--> the cost of communication between threads is relatively low.
+
+
+### why multithreading
+--> in a single threaded environment, only one task at a time can be performed.
+--> CPU cycles are wasted , for example when waiting for user input
+--> multitasking allows idle CPU time to be put to good use.
+
+###threads
+--> A thread is an independent sequential path of execution within a program
+
+
+
+
