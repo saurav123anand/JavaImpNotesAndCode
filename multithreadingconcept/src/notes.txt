@@ -29,6 +29,7 @@ ex--> MS Word that is printing and formatting text at the same time.
 (i.e they are lightweight compared to processes)
 --> They also share the process running the program
 
+## The main thread
 
 
 
