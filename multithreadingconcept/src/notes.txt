@@ -30,7 +30,7 @@ ex--> MS Word that is printing and formatting text at the same time.
 --> They also share the process running the program
 
 ## The main thread
-
+the main thread is
 
 
 
