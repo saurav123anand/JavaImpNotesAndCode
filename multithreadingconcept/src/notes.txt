@@ -30,7 +30,108 @@ ex--> MS Word that is printing and formatting text at the same time.
 --> They also share the process running the program
 
 ## The main thread
-the
+--> When a standalone application is run, a user thread is automatically created to execute the main() method of the application,
+this thread is called the main thread
+--> If no other threads are spawned, the program terminates when the main() method finishes executing.
+--> All other threads, called child threads , are spawned from the main thread.
+--> the main() method can then finish, but the program will keep running until all user threads have completed.
+--> The runtime environment distinguishes between user threads and daemon threads.
+--> Calling the setDaemon(boolean) method in the thread class marks the status of the thread as either daemon or user,
+    but this must be done before the thread is started.
+--> As long as a user thread is alive , the JVM doesn't terminate.
+--> A daemon thread is at the mercy of the runtime system: it is stopped if there are no more user threads running,
+    thus terminating the program.
+
+###### What is Daemon Thread in Java?
+--> Daemon thread in Java is a low-priority thread that performs background operations such as garbage collection,
+    finalizer, Action Listeners, Signal dispatches, etc.
+--> Daemon thread in Java is also a service provider thread that helps the user thread. Its life is at the
+    mercy of user threads; when all user threads expire, JVM immediately terminates this thread.
+--> In simple words, we can say that it provides services to user threads for background-supporting tasks.
+    Daemon thread in Java has no role in life other than to serve user threads.
+
+####When There is No User Thread, Why Does JVM Stop the Daemon Thread in Java?
+--> The daemon thread's main purpose is to provide services to the user thread for background task support.
+--> Why should JVM keep running this thread if there is no user thread?
+--> As a result, if there is no user thread, JVM stops the daemon thread.
+
+##### Properties of Daemon Thread in Java
+--> It's a thread with the lowest priority possible.
+--> They won't be able to stop the JVM from quitting once all of the user threads have completed their tasks.
+--> When all user threads have completed their execution, the JVM terminates.
+--> If JVM finds a running daemon thread, it terminates the thread and, after that, shutdown it.
+--> The JVM is unconcerned about whether the Daemon thread is active or not.
+--> The nature of a demon is passed down from parent to child. That is, if the parent is a Daemon,
+    the child will be a Daemon as well, and if the parent is a non-daemon, the child will be a non-daemon as well.
+
+#### Thread creation
+--> A thread is java is represented by an object of the Thread class
+--> Creating threads is achieved in one of two ways:
+    i) Implementing the Java.lang.Runnable interface
+    ii) Extending the Java.lang.Thread class.
+--> Runnable interface is preferable over Thread class coz we can do multiple inheritance using Interface
+
+#### Synchronization
+--> Threads share the same memory space , i,e they can share resources(objects)
+--> However, there are critical situations where it is desirable that only one thread at a time has access to a shared
+    resource.
+--> Synchronization in java is the capability to control the access of multiple threads to any shared resource. In the
+    Multithreading concept, multiple threads try to access the shared resources at a time to produce inconsistent
+    results. The synchronization is necessary for reliable communication between threads.
+--> When we use synchronized within method for particular block of code then we will have to use lock but when we use on
+    method level then don't need to use lock coz behind the scene it's doing the same thing i.e synchronized(this).
+--> lock insures that the only one thread is able to access the block of code.
+--> Lock can be any object
+--> Only one thread will have the access to all synchronized methods at a time .
+--> In static method there is no such thing like 'this' so it will use class lock(ClassName.class)
+
+### Synchronized methods
+--> While a thread is inside a synchronized method of an object, all other threads that wish to execute this
+    synchronized method or any synchronized method of the object will have to wait. other •
+--> This restriction does not apply to the thread that already has the lock and is executing a synchronized method
+    of the object.
+--> Such a method can invoke other synchronized methods of the object without being blocked.
+--> The non-synchronized methods of the object can always be called at any time by any thread.
+
+#### Rules of Synchronization:
+--> A thread must acquire the object lock associated with a shared resource before it can enter the shared resource.
+--> The runtime system ensures that no other thread can enter a shared resource if another thread already holds the object lock associated with it.
+--> If a thread cannot immediately acquire the object lock, it is blocked, i.e., it must wait for the lock to become available.
+--> When a thread exits a shared resource, the runtime system ensures that the object lock is also relinquished. If
+    another thread is waiting for this object lock, it can try to acquire the lock in order to gain access to the shared
+    resource.
+--> It should be made clear that programs shouldn't make any assumptions about the order in which threads are granted
+    ownership of a lock.
+
+#### Static Synchronized Methods:
+--> A thread acquiring the lock of a class to execute a static synchronized method has no effect on any thread acquiring the lock on any object of the class to execute a synchronized instance method.
+--> In other words, synchronization of static methods in a class is independent from the synchronization of instance methods on objects of the class.
+--> A subclass decides whether the new definition of an inherited synchronized method will remain synchronized in the
+    subclass.
+
+##### Race condition
+--> It occurs when two or more threads simultaneously update the same value(stackTopIndex) and, as a consequence , leave
+    the value in an undefined or inconsistent state.
+
+##### Synchronized Blocks :
+--> Whereas execution of synchronized methods of an object is synchronized on the lock of the object, the
+    synchronized block allows execution of arbitrary code to be synchronized on the lock of an arbitrary object.
+--> The general form of the synchronized statement is as follows: synchronized (object ref expression) { <code block> }
+--> The object ref expression must evaluate to a non-null reference value, otherwise a NullPointerException is thrown.
+
+##### Summary:
+--> A thread can hold a lock on an object :
+    i) By executing a synchronized instance method of the object. (this)
+    ii) By executing the body of a synchronized block that synchronizes on the object. (this)
+    iii) By executing a synchronized static method of a class or a block inside a static method (in which case,
+    the object is the Class object representing the class in the JVM).
+
+##### Thread safety:
+--> It's the term used to describe the design of classes that ensure that the state of their objects is always
+    consistent, even when the objects are used concurrently by multiple threads. Eg StringBuffer.
+
+
+
 
 
 
