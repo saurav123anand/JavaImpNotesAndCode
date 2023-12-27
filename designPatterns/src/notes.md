@@ -51,6 +51,12 @@ iii) Using cloning
         is the part of factory class.
   So in builder pattern create object step by step and finally return final object with desired values of attributes.
 
+# 5. Prototype design type
+--> the concept is to copy an existing object rather than creating a new instance from scratch because creating a new 
+    object may be costly.
+--> This approach saves costly resources and time, especially when object creation is a heavy process.
+
+
 
   
 
