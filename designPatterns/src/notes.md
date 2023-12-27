@@ -16,13 +16,13 @@
    ii) State pattern
    iii) Iterator pattern
 
-# Singleton design pattern
+# 1. Singleton design pattern
 --> When we only want to create one instance of class and want to reuse the same object
 
 # How to break singleton pattern 
 i) Reflection API to break singleton pattern
   # how to save our object from this 
-    i) Solution 1 : if objec t is there ==> throw exception from inside constructor 
+    i) Solution 1 : if object is there ==> throw exception from inside constructor 
     ii) Solution 2 : Using enum 
 ii) Using deserialization 
    # how to save our object from this 
@@ -30,6 +30,27 @@ ii) Using deserialization
 iii) Using cloning
    # how to save our object from this
    --> return the same object from override clone method 
+
+# 2. Factory design pattern
+--> When there is superclass and multiple subclasses and we want to get object of subclasses based on input and 
+    requirement then we create factory class which takes the responsibility of creating object of class based on input
+
+   ### Advantage of factory design pattern 
+      --> focus on creating object for intergace rather than implementation 
+      --> loose coupling,more robust code.
+
+# 3. Abstract design pattern
+--> Similar to factory design pattern 
+--> It provides the concept of factory of factories 
+
+# 4. Builder design pattern
+--> While creating object when object contain many attributes there are many problem exists
+   i) We have to pass many attributes to create object.
+   ii) Some parameters may be optional.
+   iii) Factory class takes all responsibility for creating object, if the object is heavy then all complexity 
+        is the part of factory class.
+  So in builder pattern create object step by step and finally return final object with desired values of attributes.
+
 
   
 
