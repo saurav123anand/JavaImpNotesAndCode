@@ -65,6 +65,12 @@ iii) Using cloning
 --> Deep copy==> here actual object is copied with reference attributes , so obj2 changes will not reflect on obj1
 
 
+# Observer design pattern 
+--> It's behavioural design pattern.
+--> In this when subject changes the state all its dependent objects notified the changes.
+--> one to many relation.
+
+
   
 
 
