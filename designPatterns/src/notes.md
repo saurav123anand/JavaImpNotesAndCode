@@ -32,7 +32,7 @@ iii) Using cloning
    --> return the same object from override clone method 
 
 # 2. Factory design pattern
---> When there is superclass and multiple subclasses and we want to get object of subclasses based on input and 
+--> When there is superclass and multiple subclasses, and we want to get object of subclasses based on input and 
     requirement then we create factory class which takes the responsibility of creating object of class based on input
 
    ### Advantage of factory design pattern 
@@ -68,7 +68,7 @@ iii) Using cloning
 # Observer design pattern 
 --> It's behavioural design pattern.
 --> In this when subject changes the state all its dependent objects notified the changes.
---> one to many relation.
+--> one-to-many relation.
 
 # Iterator design pattern
 --> The iterator pattern provides a way to access the elements of an object without exposing 
@@ -76,6 +76,9 @@ iii) Using cloning
 # Adapter design pattern 
 --> Adapter design pattern is one of the structural design pattern and its used so that two unrelated interfaces can
     work together. The object that joins these unrelated interface is called an Adapter.
+
+
+***************************************************THE END**************************************************************
 
 
   
