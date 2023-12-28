@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Thread1 extends Thread{
     public Thread1(String threadName){
         super(threadName);
