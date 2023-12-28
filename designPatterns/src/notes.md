@@ -73,6 +73,10 @@ iii) Using cloning
 # Iterator design pattern
 --> The iterator pattern provides a way to access the elements of an object without exposing 
 
+# Adapter design pattern 
+--> Adapter design pattern is one of the structural design pattern and its used so that two unrelated interfaces can
+    work together. The object that joins these unrelated interface is called an Adapter.
+
 
   
 
