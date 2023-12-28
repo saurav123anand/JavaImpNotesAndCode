@@ -70,6 +70,9 @@ iii) Using cloning
 --> In this when subject changes the state all its dependent objects notified the changes.
 --> one to many relation.
 
+# Iterator design pattern
+--> The iterator pattern provides a way to access the elements of an object without exposing 
+
 
   
 
