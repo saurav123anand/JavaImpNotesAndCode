@@ -57,6 +57,13 @@ iii) Using cloning
 --> This approach saves costly resources and time, especially when object creation is a heavy process.
 
 
+# Deep copy vs Shallow copy
+--> Shallow copy=> when we are copying object(obj1) and obj1 having objects as attributes then reference will be copied
+    of attributes not the actual object so if copied object changes the attributes value then it will reflect in obj1
+    object attributes also 
+
+--> Deep copy==> here actual object is copied with reference attributes , so obj2 changes will not reflect on obj1
+
 
   
 
