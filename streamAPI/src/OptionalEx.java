@@ -1,4 +1,3 @@
-import java.io.StringReader;
 import java.util.Optional;
 
 public class OptionalEx {
