@@ -17,12 +17,12 @@ public class Main {
 //       Test.Level medium = Test.Level.MEDIUM;
 //        System.out.println(medium);
 
-//        Mobile[] mobiles=Mobile.values();
-//        System.out.println(Arrays.toString(mobiles));
+        Mobile[] mobiles=Mobile.values();
+        System.out.println(Arrays.toString(mobiles));
 //
-//        for (Mobile mob:mobiles){
-//            System.out.println(mob + " cost is "+mob.getPrice());
-//        }
+        for (Mobile mob:mobiles){
+            System.out.println(mob + " cost is "+mob.getPrice());
+        }
 
 //        Mobile mobile=Mobile.valueOf("SAMSUNG");
 //        System.out.println(mobile);

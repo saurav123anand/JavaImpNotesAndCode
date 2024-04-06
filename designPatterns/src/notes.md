@@ -36,7 +36,7 @@ iii) Using cloning
     requirement then we create factory class which takes the responsibility of creating object of class based on input
 
    ### Advantage of factory design pattern 
-      --> focus on creating object for intergace rather than implementation 
+      --> focus on creating object for interface rather than implementation 
       --> loose coupling,more robust code.
 
 # 3. Abstract design pattern

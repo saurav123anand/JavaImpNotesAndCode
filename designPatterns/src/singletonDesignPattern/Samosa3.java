@@ -28,6 +28,7 @@ public class Samosa3 implements Serializable,Cloneable {
         }
         return samosa;
     }
+    // saving for deserialization
     public Object readResolve(){
        return samosa;
     }
