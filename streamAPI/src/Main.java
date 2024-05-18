@@ -21,6 +21,7 @@ public class Main {
         Stream<Integer> stream = list.stream();
         List<Integer> collect = stream.filter(val -> val % 2 == 0).collect(Collectors.toList());
         System.out.println(collect);
+        System.out.println(10/3);
 
     }
 }
