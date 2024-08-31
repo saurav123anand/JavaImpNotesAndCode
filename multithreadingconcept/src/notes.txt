@@ -81,7 +81,7 @@ this thread is called the main thread
 --> When we use synchronized within method for particular block of code then we will have to use lock but when we use on
     method level then don't need to use lock coz behind the scene it's doing the same thing i.e synchronized(this).
 --> lock insures that the only one thread is able to access the block of code.
---> Lock can be any object
+--> Lock can be any object (primitives are not allowed ) for example : new Integer() we can use but not int
 --> Only one thread will have the access to all synchronized methods at a time .
 --> In static method there is no such thing like 'this' so it will use class lock(ClassName.class)
 
