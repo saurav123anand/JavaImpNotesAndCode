@@ -130,6 +130,10 @@ this thread is called the main thread
 --> It's the term used to describe the design of classes that ensure that the state of their objects is always
     consistent, even when the objects are used concurrently by multiple threads. Eg StringBuffer.
 
+##### Volatile keyword 
+--> it's a modifier applied to variables, it ensures that the value of the variable is always read from and written to the main memory rather than from the CPU cache. 
+--> It gurantess that changes made to a variable by one thread are immediately visible to all other threads. this is crucial in multi-threaded applications where multiple thread might access the same variable.
+
 
 
 
