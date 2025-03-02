@@ -1,6 +1,8 @@
 package employeeBasedQuestions;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Ques {
     public static void main(String[] args) {
@@ -48,9 +50,15 @@ public class Ques {
 //                .limit(1).findFirst().orElse(null);
 //        System.out.println(employee);
 
+        // 7. Find the youngest female employee.
+//        Employee youngestFemale = empList.stream().filter(e -> e.getGender().equalsIgnoreCase("F"))
+//                .min((e1, e2) -> Integer.compare(e1.getAge(), e2.getAge()))
+//                .get();
+//        System.out.println(youngestFemale);
 
-
-
-
+        // 8. Find the department name which has the highest number of employees.
+        Map.Entry<String, Long> stringLongEntry = empList.stream().collect(Collectors.groupingBy(Employee::getDeptName, Collectors.counting()))
+                .entrySet().stream().max(Map.Entry.comparingByValue()).get();
+        System.out.println(stringLongEntry.getKey());
     }
 }
