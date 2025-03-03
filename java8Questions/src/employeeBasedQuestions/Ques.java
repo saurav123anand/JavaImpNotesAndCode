@@ -2,11 +2,13 @@ package employeeBasedQuestions;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 import java.util.stream.Stream;
 
 public class Ques {
     public static void main(String[] args) {
         List<Employee> empList = new ArrayList<>();
+        empList.add(new Employee(9, "stv", 25, 160, "M", "IT", "Blore", 2010));
         empList.add(new Employee(1, "abc", 28, 123, "F", "HR", "Blore", 2020));
         empList.add(new Employee(2, "xyz", 29, 120, "F", "HR", "Hyderabad", 2015));
         empList.add(new Employee(3, "efg", 30, 115, "M", "HR", "Chennai", 2014));
@@ -16,7 +18,6 @@ public class Ques {
         empList.add(new Employee(6, "mno", 27, 140, "M", "IT", "Gurugram", 2017));
         empList.add(new Employee(7, "uvw", 26, 130, "F", "IT", "Pune", 2016));
         empList.add(new Employee(8, "pqr", 23, 145, "M", "IT", "Trivandam", 2015));
-        empList.add(new Employee(9, "stv", 25, 160, "M", "IT", "Blore", 2010));
 
         // 1. Group the Employees by city.
 //        Map<String, List<Employee>> collect =empList.stream().collect(Collectors.groupingBy(Employee::getCity));
@@ -57,8 +58,60 @@ public class Ques {
 //        System.out.println(youngestFemale);
 
         // 8. Find the department name which has the highest number of employees.
-        Map.Entry<String, Long> stringLongEntry = empList.stream().collect(Collectors.groupingBy(Employee::getDeptName, Collectors.counting()))
-                .entrySet().stream().max(Map.Entry.comparingByValue()).get();
-        System.out.println(stringLongEntry.getKey());
+//        Map.Entry<String, Long> stringLongEntry = empList.stream().collect(Collectors.groupingBy(Employee::getDeptName, Collectors.counting()))
+//                .entrySet().stream().max(Map.Entry.comparingByValue()).get();
+//        System.out.println(stringLongEntry.getKey());
+
+        // 9. Find if there are any employees from HR Department.
+
+//        Optional<Employee> hr = empList.stream().filter(employee -> employee.getDeptName().equalsIgnoreCase("HR"))
+//                .findAny();
+//        hr.ifPresent(System.out::println);
+
+        // 10. Find the department names that these employees work for, where the number of
+        // employees in the department is over 3.
+//        List<String> ans = empList.stream().collect(Collectors.groupingBy(Employee::getDeptName, Collectors.counting()))
+//                .entrySet().stream()
+//                .filter(entr -> entr.getValue() > 3)
+//                .map(Map.Entry::getKey)
+//                .toList();
+//        System.out.println(ans);
+
+        // 11. Find all employees who lives in ‘Blore’ city, sort them by their name and print the
+        // names of employees.
+//        List<Employee> employees = empList.stream().filter(employee -> employee.getCity().
+//                        equalsIgnoreCase("Blore"))
+//                .sorted((e1, e2) -> e1.getName().compareTo(e2.getName()))
+//                .toList();
+//        System.out.println(employees);
+
+        // 12.  No of employees in the organisation.
+//        long count = empList.stream().count();
+//        System.out.println(count);
+
+        // 13. Sorting a Stream by age and name fields.
+
+        // meth 1
+//        System.out.println("Sorting based on name and age:: ");
+//        Comparator<Employee> comparator1 = Comparator.comparing(Employee::getName);
+//        Comparator<Employee> comparator2 = Comparator.comparingInt(Employee::getAge);
+//        empList.stream().sorted(comparator1.thenComparing(comparator2)).forEach(employee -> System.out.print(employee.getName()+" "));
+//        System.out.println();
+//        // meth 2
+//        empList.stream().sorted(Comparator.comparing(Employee::getAge))
+//                .sorted(Comparator.comparing(Employee::getName))
+//                .forEach(employee -> System.out.print(employee.getName()+" "));
+
+        // 14. Highest experienced employees in the organization.
+//        Employee employee = empList.stream().min(Comparator.comparing(Employee::getYearOfJoining))
+//                        .get();
+//        System.out.println(employee);
+
+        // 15. Print average and total salary of the organization.
+        double sum = empList.stream().mapToDouble(Employee::getSalary).sum();
+        Double average = empList.stream().mapToDouble(Employee::getSalary).average().getAsDouble();
+        System.out.println(sum);
+        System.out.println(average);
+
     }
 }
