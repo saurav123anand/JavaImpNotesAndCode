@@ -83,11 +83,16 @@ public class Questions {
 //        Set<Integer> set=new HashSet<>(list);
 //        System.out.println(list.size()!=set.size());\
         // 10. How to find only duplicate elements with its count from the String ArrayList in Java8?
-        List<String> names = Arrays.asList("AA", "BB", "AA", "CC");
-        Map<String, Long> collect = names.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .entrySet().stream().filter(entry -> entry.getValue() > 1)
-                .collect(Collectors.toMap(entry -> entry.getKey(), entry -> entry.getValue()));
-        System.out.println(collect);
+//        List<String> names = Arrays.asList("AA", "BB", "AA", "CC");
+//        Map<String, Long> collect = names.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+//                .entrySet().stream().filter(entry -> entry.getValue() > 1)
+//                .collect(Collectors.toMap(entry -> entry.getKey(), entry -> entry.getValue()));
+//        System.out.println(collect);
+
+        // sum of all the numbers which are greater than 23
+//        List<Integer> list=List.of(15,25,17,45,25,22);
+//        Integer reduce = list.stream().filter(el -> el > 23).reduce(0, (a, b) -> a + b);
+//        System.out.println(reduce);
 
 
     }
