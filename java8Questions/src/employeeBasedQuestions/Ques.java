@@ -136,7 +136,7 @@ public class Ques {
 //                Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary))));
 //        collect.entrySet().forEach(entry-> System.out.println(entry.getValue().get()));
 
-        // 19. Print list of employee’s second highest record based on department
+        // 19. Print list of employee’s second-highest record based on department
 //        Map<String, Optional<Employee>> collect = empList.stream().collect(Collectors.groupingBy(Employee::getDeptName,
 //                Collectors.collectingAndThen(Collectors.toList(),
 //                        list -> list.stream().sorted(Comparator

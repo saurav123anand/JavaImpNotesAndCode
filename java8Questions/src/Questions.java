@@ -2,6 +2,7 @@ import javax.xml.stream.events.StartDocument;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Questions {
     public static void main(String[] args) {
