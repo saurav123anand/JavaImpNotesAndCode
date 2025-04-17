@@ -42,13 +42,17 @@ public class ParallelStream {
         // using parallel stream it won't give correct output because one task is
         // dependent on other
 
-        List<Integer> list= Arrays.asList(1,2,3,4,5);
-        AtomicInteger sum=new AtomicInteger(0);
-        List<Integer> cumulativeSum = list.parallelStream().map(sum::addAndGet)
-                .toList();
-        System.out.println("Expected cumulative sum: [1,3,6,10,15]");
-        System.out.println("Actual result with parallel stream: "+cumulativeSum);
+//        List<Integer> list= Arrays.asList(1,2,3,4,5);
+//        AtomicInteger sum=new AtomicInteger(0);
+//        List<Integer> cumulativeSum = list.parallelStream().map(sum::addAndGet)
+//                .toList();
+//        System.out.println("Expected cumulative sum: [1,3,6,10,15]");
+//        System.out.println("Actual result with parallel stream: "+cumulativeSum);
 
+
+
+        List<String> names=List.of("Saurav","Gaurav","Anand");
+        names.parallelStream().forEachOrdered(System.out::println);
 
 
     }
