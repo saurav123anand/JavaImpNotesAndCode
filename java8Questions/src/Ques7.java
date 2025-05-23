@@ -7,7 +7,7 @@ public class Ques7 {
         list.stream().filter(i->i%5==0).forEach(System.out::println);
     }
     public static void main(String[] args) {
-        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+        List<Integer> listOfIntegers = Arrays.asList(45,2343,32,25,45,12,15);
         printMultiple(listOfIntegers);
 
     }

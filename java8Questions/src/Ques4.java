@@ -13,7 +13,7 @@ public class Ques4 {
     }
 
     public static void main(String[] args) {
-        List<String> stationeryList = Arrays.asList("Pen", "Eraser", "Note Book", "Pen", "Pencil", "Stapler", "Note Book", "Pencil");
-        System.out.println(getFreq(stationeryList));
+        List<String> list = Arrays.asList("Pen", "Ball", "Notebook", "Pen", "Eraser", "Stapler", "Notebook", "Sharpeners", "Stapler");
+        System.out.println(getFreq(list));
     }
 }

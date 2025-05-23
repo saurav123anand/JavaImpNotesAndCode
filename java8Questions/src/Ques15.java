@@ -8,7 +8,7 @@ public class Ques15 {
         return result;
     }
     public static void main(String[] args) {
-        List<String> listOfStrings = Arrays.asList("Java", "Python", "C#", "HTML", "Kotlin", "C++", "COBOL", "C");
+        List<String> listOfStrings = Arrays.asList("java","Bengaluru","Mumbai","Delhi","Kolkata","Chennai");
         System.out.println(sort(listOfStrings));
     }
 }

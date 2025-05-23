@@ -11,8 +11,8 @@ public class Ques9 {
 
     }
     public static void main(String[] args) {
-        int[] a = new int[] {4, 2, 7, 1};
-        int[] b = new int[] {8, 3, 9, 5};
+        int[] a = new int[] {4,3,32,2};
+        int[] b = new int[] {4,22,3,21};
         int[] merge = merge(a, b);
         Arrays.stream(merge).forEach(System.out::println);
     }

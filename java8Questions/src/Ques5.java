@@ -11,7 +11,7 @@ public class Ques5 {
         return ans;
     }
     public static void main(String[] args) {
-        List<Double> decimalList = Arrays.asList(12.45, 23.58, 17.13, 42.89, 33.78, 71.85, 56.98, 21.12);
+        List<Double> decimalList = Arrays.asList(12.45,9.81,45.9,12.7,89.90,34.56,11.3);
         System.out.println(sortReverse(decimalList));
     }
 }

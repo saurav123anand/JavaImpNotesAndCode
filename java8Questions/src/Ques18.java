@@ -8,7 +8,7 @@ public class Ques18 {
         return result;
     }
     public static void main(String[] args) {
-        List<String> listOfStrings = Arrays.asList("One", "2wo", "3hree", "Four", "5ive", "Six");
+        List<String> listOfStrings = Arrays.asList("One", "2wo", "3hree", "Four", "5ive", "6ix","45ro,'7ko");
         System.out.println(startsWith(listOfStrings));
 
     }

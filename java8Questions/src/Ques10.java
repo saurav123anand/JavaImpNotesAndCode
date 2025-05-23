@@ -9,9 +9,8 @@ public class Ques10 {
 
     }
     public static void main(String[] args) {
-        int[] a = new int[] {4, 2, 5, 1};
-        int[] b = new int[] {8, 1, 9, 5};
-        int[] merge = merge(a, b);
-        Arrays.stream(merge).forEach(System.out::println);
+        int[] a = new int[] {6,0,4,5};
+        int[] b = new int[] {1,0,9,3};
+        System.out.println(Arrays.toString(merge(a,b)));
     }
 }

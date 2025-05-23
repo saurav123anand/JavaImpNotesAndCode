@@ -12,7 +12,7 @@ public class Ques23 {
         return result;
     }
     public static void main(String[] args) {
-        List<String> listOfStrings = Arrays.asList("One", "Two", "Three", "Four", "Five", "Six");
-        System.out.println(lastElement(listOfStrings));
+        List<String> list = Arrays.asList("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten");
+        System.out.println(lastElement(list));
     }
 }

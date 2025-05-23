@@ -8,7 +8,7 @@ public class Ques17 {
         return reversed;
     }
     public static void main(String[] args) {
-        String str = "Java Concept Of The Day";
+        String str = "java is a awesome programming language";
         System.out.println(reverse(str));
     }
 }

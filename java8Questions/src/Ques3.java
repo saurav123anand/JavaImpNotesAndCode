@@ -15,7 +15,7 @@ public class Ques3 {
 
     }
     public static void main(String[] args) {
-        String inputString = "Java Concept Of The Day";
+        String inputString = "Java is an awesome programming language";
         System.out.println(getFreq(inputString));
 
     }

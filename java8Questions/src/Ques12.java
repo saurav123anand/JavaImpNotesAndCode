@@ -12,7 +12,7 @@ public class Ques12 {
 
     }
     public static void main(String[] args) {
-        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+        List<Integer> listOfIntegers = Arrays.asList(32,3,2323,23,23,23,234,24,234,324,232,3121,21,3213,123);
         System.out.println(secondLargest(listOfIntegers));
     }
 }

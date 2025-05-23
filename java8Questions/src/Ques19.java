@@ -9,7 +9,7 @@ public class Ques19 {
         return result;
     }
     public static void main(String[] args) {
-        List<Integer> listOfIntegers = Arrays.asList(111, 222, 333, 111, 555, 333, 777, 222);
+        List<Integer> listOfIntegers = Arrays.asList(122,122,345,4,54,54,54,2,212,1,31,21131,3,11,3);
         System.out.println(extract(listOfIntegers));
     }
 }

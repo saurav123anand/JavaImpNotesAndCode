@@ -19,7 +19,7 @@ public class Ques21 {
         return result;
     }
     public static void main(String[] args) {
-        String inputString = "Java Concept Of The Day".replaceAll("\\s+", "").toLowerCase();
+        String inputString = "java is a awesome programming language";
 //        System.out.println(extract(inputString).get(0));
         System.out.println(extract(inputString));
     }

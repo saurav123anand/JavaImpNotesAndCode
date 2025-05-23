@@ -9,12 +9,12 @@ public class Ques22 {
     public static String nonRepeated(String str){
         Map<String, Long> map = Arrays.stream(str.split("")).collect(Collectors.groupingBy(Function.identity(),
                 LinkedHashMap::new, Collectors.counting()));
-        String result = map.entrySet().stream().filter(entry -> entry.getValue() == 1)
+        return map.entrySet().stream().filter(entry -> entry.getValue() == 1)
                 .map(entry -> entry.getKey()).findFirst().get();
-        return result;
+
     }
     public static void main(String[] args) {
-        String inputString = "Java Concept Of The Day".replaceAll("\\s+", "").toLowerCase();
-        System.out.println(nonRepeated(inputString));
+        String str = "java is a just a awesome programming language and it's platform independent";
+        System.out.println(nonRepeated(str));
     }
 }

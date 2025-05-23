@@ -9,7 +9,7 @@ public class Ques6 {
         return result;
     }
     public static void main(String[] args) {
-        List<String> listOfStrings = Arrays.asList("Facebook", "Twitter", "YouTube", "WhatsApp", "LinkedIn");
+        List<String> listOfStrings = Arrays.asList("Meta", "Medium", "Reddit", "WhatsApp", "LinkedIn");
         System.out.println(join(listOfStrings));
     }
 }

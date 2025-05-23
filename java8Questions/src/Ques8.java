@@ -13,7 +13,7 @@ public class Ques8 {
         System.out.println(maxVal.get());
     }
     public static void main(String[] args) {
-        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+        List<Integer> listOfIntegers = Arrays.asList(89,212,11,10,21,12,34,90);
         minMax(listOfIntegers);
     }
 }

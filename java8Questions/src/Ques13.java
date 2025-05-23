@@ -9,8 +9,8 @@ public class Ques13 {
         return s1.equals(s2);
     }
     public static void main(String[] args) {
-        String s1 = "RaceCar";
-        String s2 = "CarRace";
+        String s1 = "saurav";
+        String s2 = "vauras";
         System.out.println(isAnagram(s1,s2));
     }
 }

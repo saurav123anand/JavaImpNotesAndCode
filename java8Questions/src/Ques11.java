@@ -12,7 +12,7 @@ public class Ques11 {
 
     }
     public static void main(String[] args) {
-        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+        List<Integer> listOfIntegers = Arrays.asList(23,231,23,122,34,2,44,3435,1232,434,234,2,24234,232,2423423);
         getThreeMinMax(listOfIntegers);
     }
 }

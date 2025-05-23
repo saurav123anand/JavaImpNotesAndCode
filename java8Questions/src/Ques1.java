@@ -20,7 +20,7 @@ public class Ques1 {
 
     }
     public static void main(String[] args) {
-        List<Integer> listOfIntegers = Arrays.asList(71, 18, 42, 21, 67, 32, 95, 14, 56, 87);
+        List<Integer> listOfIntegers = Arrays.asList(23,78,95,73,23,56,12,90,334,71,95,73,23,561,12,90,33);
         filterNumbers(listOfIntegers);
     }
 }

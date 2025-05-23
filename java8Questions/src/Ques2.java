@@ -11,7 +11,7 @@ public class Ques2 {
     }
 
     public static void main(String[] args) {
-        List<String> list= Arrays.asList("Java", "Python", "C#", "Java", "Kotlin", "Python");
+        List<String> list= Arrays.asList("Java", "Ruby", "C#", "Java", "Kotlin", "Ruby", "C++", "COBOL", "C#");
         System.out.println(removeDuplicates(list));
     }
 }
