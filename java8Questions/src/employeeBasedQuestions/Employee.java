@@ -9,9 +9,11 @@ public class Employee {
     private String deptName;
     private String city;
     private int yearOfJoining;
+    private int totalExp;
+    private String designation;
 
-    public Employee(int id, String name, int age, long salary, String gender,
-                    String deptName, String city, int yearOfJoining) {
+    public Employee(int id, String name, int age, long salary, String gender, String deptName,
+                    String city, int yearOfJoining, int totalExp, String designation) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -20,6 +22,8 @@ public class Employee {
         this.deptName = deptName;
         this.city = city;
         this.yearOfJoining = yearOfJoining;
+        this.totalExp = totalExp;
+        this.designation = designation;
     }
 
     @Override
@@ -32,7 +36,9 @@ public class Employee {
                 ", gender='" + gender + '\'' +
                 ", deptName='" + deptName + '\'' +
                 ", city='" + city + '\'' +
-                ", yearOfJoining='" + yearOfJoining + '\'' +
+                ", yearOfJoining=" + yearOfJoining +
+                ", totalExp=" + totalExp +
+                ", designation='" + designation + '\'' +
                 '}';
     }
 
@@ -98,5 +104,21 @@ public class Employee {
 
     public void setYearOfJoining(int yearOfJoining) {
         this.yearOfJoining = yearOfJoining;
+    }
+
+    public int getTotalExp() {
+        return totalExp;
+    }
+
+    public void setTotalExp(int totalExp) {
+        this.totalExp = totalExp;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
     }
 }
